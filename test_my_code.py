@@ -24,8 +24,8 @@ punctuations = "!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 def my_code(get):
     #INSTRUCTIONS ABOUT USAGE(EN):
     #Between the lines DO_NOT_EDIT_ANYTHING_XXXX_THIS_LINE you have your code.Copy&Paste it after this line.
-    #After doing that at some point you need to get input from user. BE CAREFUL: YOU NEED TO REPLACE variable = input() with variable = get. get is the paramater that passing input, testing your code
-    #is dependent on whether correct input passed or not.
+    #After doing that at some point you need to get input from user. BE CAREFUL: YOU NEED TO REPLACE variable = input() with variable = get.
+    #get is the paramater that passing input, testing your code is dependent on whether correct input passed or not.
     #At this point you must hold your formatted(uppercased words) sentence in a variable called "output_sentence" and the polarity score in a variable called "total_polarity.
     #YOU MUST RETURN THEM in this function such:(Add the next line to the end of this function)
     #   return output_sentence,total_polarity.
@@ -43,9 +43,7 @@ def run_tests(n):
         lines = cases.readlines()
         for line in lines:
             temp = line.split("\t")
-            user_input = temp[0]
-            expected_output = temp[1]
-            polarity_score = temp[2]
+            user_input,expected_output,polarity_score = temp[0],temp[1],temp[2]
             user_output,user_score = my_code(user_input)
             if user_score == int(polarity_score) and expected_output == user_output:
                 p+=1
