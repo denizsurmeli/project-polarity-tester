@@ -20,7 +20,7 @@ lines in file are seperated with tabs so you can accept the format as following:
 ```
 - The cases generated are expected cases. No edge cases such as containing "Am&azing!2" or "don''t'".
 - For any problems or help you need, you can create an issue in here.
-
+- This code is property of CMPE150. But DO NOT COPY ANY CODE.It will be captured by TeachingCodes, and the lecturer will not tolerate any copying we assume.
 
 Intihal yapmayalim:
 ## Author of Markovify:
